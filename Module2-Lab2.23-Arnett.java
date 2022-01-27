@@ -22,7 +22,7 @@ public class LabProgram {
         double product2;
         double avg2;
 
-        product2 = (num1 * num2 * num3 * num4);
+        product2 = (double)(num1) * (double)(num2) * (double)(num3) * (double)(num4);
         avg2 = (num1 + num2 + num3 + num4) / 4.0;
 
         System.out.println(product1 + " " + avg1);
