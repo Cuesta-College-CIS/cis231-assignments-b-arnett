@@ -5,15 +5,24 @@ public class LabProgram {
     public static void main(String[] args) {
         Scanner scnr = new Scanner(System.in);
 
+        // int aryLng = scnr.nextInt();
+        // double[] userIn = new double[aryLng];
+        // for (int i = 0; i < aryLng; i++) {
+        // userIn[i] = scnr.nextDouble();
+        // }
+        // double maxIn = 0.0;
+        // for (int j = 0; j < aryLng; j++) {
+        // if (userIn[j] > maxIn) {
+        // maxIn = userIn[j];
+        // }
+        // }
+        double maxIn = 0.0;
         int aryLng = scnr.nextInt();
         double[] userIn = new double[aryLng];
         for (int i = 0; i < aryLng; i++) {
             userIn[i] = scnr.nextDouble();
-        }
-        double maxIn = 0.0;
-        for (int j = 0; j < aryLng; j++) {
-            if (userIn[j] > maxIn) {
-                maxIn = userIn[j];
+            if ((i == 0) || (userIn[i] > maxIn)) {
+                maxIn = userIn[i];
             }
         }
         double[] finalAry = new double[aryLng];
